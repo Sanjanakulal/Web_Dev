@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variable</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+        :root {
+            --color: rgb(96, 144, 172);
+            --colorsec: rgb(187, 223, 230);
+            --defpad: 10px;
+
+        }
+
+        body {
+            background-color: var(--color);
+        }
+
+        .nav {
+            display: flex;
+            padding: var(--defpad);
+            border: 1px solid;
+            border-radius: 8px;
+            justify-content: center;
+            background-color: var(--colorsec);
+            margin: 10px;
+        }
+
+        .nav li {
+            list-style: none;
+            border: 2px solid var(--color);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 8px;
+            background-color: var(--color);
+            font-family: "Rubik", sans-serif;
+            color: white;
+
+        }
+
+        .nav li:hover {
+            background-color: var(--colorsec);
+            border: 2px solid var(--color);
+            color: var(--color);
+            box-shadow: 5px 5px 10px black;
+        }
+
+        div {
+            border: 1px solid;
+            border-radius: 8px;
+            background-color: var(--colorsec);
+            margin: 10px;
+        }
+
+        div h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Introduction</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe optio eos porro voluptatibus, assumenda
+            eveniet modi velit iste repudiandae ipsam deserunt libero eligendi laborum officiis ratione! Ipsa eligendi
+            culpa temporibus, quo libero illo vel dicta, vero nostrum et earum voluptate reiciendis suscipit sed
+            voluptas quos. Suscipit reprehenderit ea nesciunt possimus nostrum tempora eligendi cupiditate officia
+            consectetur distinctio inventore voluptatibus beatae nulla ratione porro quam eveniet eum amet quas, ipsa,
+            eos, ab sint eaque a? Impedit veniam officia voluptates libero?</p>
+    </div>
+</body>
+
+</html>
